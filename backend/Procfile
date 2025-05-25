@@ -1,1 +1,1 @@
-web: .\run_all.ps1
+web: bash run_all.sh
