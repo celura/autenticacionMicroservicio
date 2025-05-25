@@ -1,8 +1,5 @@
-import sys
-import os
 import pymysql
 pymysql.install_as_MySQLdb()
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 from flask import Flask
 from flask_jwt_extended import JWTManager
