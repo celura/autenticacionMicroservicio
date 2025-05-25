@@ -7,5 +7,5 @@ class Config:
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=12)
     
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-        'mysql://root:proyectoCalidadServidor@localhost/calidad_servidor'  
+        'mysql+pymysql://root:proyectoCalidadServidor@localhost/calidad_servidor'  
     SQLALCHEMY_TRACK_MODIFICATIONS = False
