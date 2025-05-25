@@ -14,8 +14,8 @@ def create_app():
 
     db.init_app(app)
     JWTManager(app)
-    with app.app_context():
-        db.create_all() 
+    #with app.app_context():
+    #    db.create_all() 
     CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}}, supports_credentials=True)
     app.register_blueprint(riesgo_routes, url_prefix='/riesgo')
     return app
