@@ -16,7 +16,7 @@ def create_app():
     JWTManager(app)
     with app.app_context():
         db.create_all() 
-    CORS(app, origins="http://localhost:5173", supports_credentials=True)
+    CORS(app, origins="https://calidad-servidor-front-dcwvj7ty2-celuras-projects.vercel.app", supports_credentials=True)
 
     app.register_blueprint(auth_routes, url_prefix='/auth')
     return app
